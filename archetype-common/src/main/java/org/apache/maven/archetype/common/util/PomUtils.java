@@ -131,9 +131,12 @@ public final class PomUtils
             tf.setAttribute( "indent-number", 2 );
             final Transformer tr;
             InputStream xsl = PomUtils.class.getResourceAsStream( "/prettyprint.xsl" );
-            try {
+            try
+            {
                 tr = tf.newTransformer( new StreamSource( xsl ) );
-            } finally {
+            } 
+            finally 
+            {
                 xsl.close();
             }
             tr.setOutputProperty( OutputKeys.INDENT, "yes" );
