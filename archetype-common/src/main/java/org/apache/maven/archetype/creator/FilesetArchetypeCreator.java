@@ -462,7 +462,7 @@ public class FilesetArchetypeCreator
             { "maven-install-plugin", "3.1.0" },
             { "maven-deploy-plugin", "3.1.0" }
         };
-        for ( String[] arr : plugins) 
+        for ( String[] arr : plugins ) 
         {
             Plugin plugin1 = new Plugin();
             plugin1.setGroupId( "org.apache.maven.plugins" );
